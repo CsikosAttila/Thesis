@@ -1,2 +1,9 @@
-# Thesis
-Investigation of Inter-core Communication on a Multicore Microcontroller
+# Thesis - Investigation of Inter-core Communication on a Multicore Microcontroller
+
+In this thesis, I investigate the inter-core communication of multi-core microcontrollers, with a focus on the impact of different parameters on the performance of embedded systems. As technology evolves, there is an increasing need for efficient, real-time processing in embedded environments, especially in safety-critical applications such as autonomous vehicles, robotics and industrial automation. These applications require not only high processing power, but also precise timing and low latency data exchange, making inter-core communication a fundamental issue in system design.
+
+In my research, I have identified two main strategies for implementing parallel processing. One is software-level parallelism, in which I divide tasks between threads or processes. The other is hardware-level multicore architecture, which allows multiple processor cores to run concurrently. By exploiting these strategies, embedded systems can meet increasing computational demands without compromising real-time responsiveness.
+
+To explore these concepts, I used the Texas Instruments LP-AM243 development board, which contains quad-core ARM Cortex-R5F and ARM Cortex-M4F processors. I conducted experiments to systematically analyse the impact of key parameters such as the clock frequency of the cores, message size and communication direction on the latency associated with information sharing between cores.
+
+My results show that optimizing parameters such as clock frequency and message size can significantly increase data transmission speed and reliability. I have gained concrete insight into the operation of inter-core communication mechanisms such as IPC RPMessage and IPC Notify, and have been able to explore the trade-offs between throughput and latency.
